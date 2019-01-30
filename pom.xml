@@ -15,7 +15,7 @@
     <description>test api for development purposes</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>10</java.version>
         <vaadin.version>12.0.5</vaadin.version>
     </properties>
 
