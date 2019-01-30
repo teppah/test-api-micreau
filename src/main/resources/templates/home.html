@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+<h1>WARNING: DEVELOPER PAGE. NO UNAUTHORIZED ACCESS ALLOWED.</h1>
+<h3><b>Everything will be purged every minute.</b></h3>
+<table>
+    <thead>
+    <tr>
+        <th>Id (debug)</th>
+        <th>Sensor name</th>
+        <th>Temperature</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${temps.isEmpty()}">
+        <td>Nothing available</td>
+    </tr>
+    <tr th:each="temp : ${temps}">
+        <td th:text="${temp.id}">placeholder</td>
+        <td th:text="${temp.sensorName}">placeholder</td>
+        <td th:text="${temp.temperature}">placeholder</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
